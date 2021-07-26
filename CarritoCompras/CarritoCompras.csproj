@@ -131,7 +131,14 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="img\img1.jpg" />
+    <Content Include="img\img2.jpg" />
+    <Content Include="img\img3.jpg" />
+    <Content Include="img\img4.jpg" />
+    <Content Include="img\img5.jpg" />
+    <Content Include="Scripts\menu.js" />
     <Content Include="Scripts\Navbar.js" />
+    <Content Include="Scripts\slider.js" />
     <Content Include="Views\Shared\script.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -147,7 +154,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\View.cshtml" />
+    <Content Include="Views\Home\Product.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -158,6 +165,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\Inconsolata.ttf" />
+    <Content Include="fonts\Roboto-Regular.ttf" />
+    <Content Include="fonts\Poppins-Bold.ttf" />
     <None Include="packages.config" />
   </ItemGroup>
   <PropertyGroup>

@@ -4,9 +4,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link href="@Url.Content("~/Content/Style.css")" rel="stylesheet" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
 </head>
 <body>
     <header class="main-header">
@@ -19,26 +19,51 @@
                     <ul class="menu">
                         <li class="menu-item">@Html.ActionLink("Inicio", "Index", "Home", new { @class = "menu-item" })</li>
                         <li class="menu-item">@Html.ActionLink("Acerca de", "About", "Home", new { @class = "menu-item" })</li>
-                        <li class="menu-item">@Html.ActionLink("Inicio", "Index", "Home", new { @class = "menu-item" })</li>
-                        <li class="menu-item">@Html.ActionLink("Inicio", "Index", "Home", new { @class = "menu-item" })</li>
-                        <li class="menu-item">@Html.ActionLink("Inicio", "Index", "Home", new { @class = "menu-item" })</li>
-                        <li class="menu-item">@Html.ActionLink("Inicio", "Index", "Home", new { @class = "menu-item" })</li>
+                        <li class="menu-item">@Html.ActionLink("Productos", "Product", "Home", new { @class = "menu-item" })</li>
+                        <li class="menu-item">@Html.ActionLink("Contacto", "Contact", "Home", new { @class = "menu-item" })</li>
                     </ul>
                 </nav>
             </div>
 
             <div class="main-header-container">
                 <span class="main-header-txt">Necesitas Ayuda</span>
-                <p class="main-header-txt"><i class='bx bxs-phone-call'></i>LLamanos: 0987139598</p>
+                <p class="main-header-txt"><i class='bx bxs-phone-call'></i> Llamanos: 0987139598</p>
             </div>
 
             <div class="main-header-container">
                 <i class='bx bxs-user'></i>
-                <a href="">Mi Carrito <i class='bx bxs-cart'></i></a>
+                <a href="" class="main-header-btn">Mi Carrito <i class='bx bxs-cart'></i></a>
             </div>
 
         </div>
     </header>
     @RenderBody()
+<footer class="main-footer">
+    <div class="footer-section">
+        <h2 class="footer-title">Nosotros: </h2>
+        <p class="footer-txt">Lorem ipsum dolor sit amet consectetur adipiscing elit gravida, luctus iaculis phasellus tempus nisi placerat platea hac, fringilla ante dis rutrum posuere vitae feugiat.</p>
+    </div>
+    <div class="footer-section">
+        <h2 class="footer-title">Locación: </h2>
+        <p class="footer-txt">Lorem ipsum dolor sit amet consectetur adipiscing elit gravida, luctus iaculis phasellus tempus nisi placerat platea hac, fringilla ante dis rutrum posuere vitae feugiat.</p>
+    </div>
+    <div class="footer-section">
+        <h2 class="footer-title">Contacto: </h2>
+        <p class="footer-txt">Cell: 0987139598</p>
+    </div>
+    <div class="footer-section">
+        <h2 class="footer-title">Email: </h2>
+        <p class="footer-txt">info@example.com</p>
+    </div>
+    <div class="footer-section">
+        <h2 class="footer-title">Links Rapidos</h2>
+        @Html.ActionLink("Inicio", "Index", "Home", new { @class = "footer-link" })
+        @Html.ActionLink("Inicio", "Index", "Home", new { @class = "footer-link" })
+        @Html.ActionLink("Inicio", "Index", "Home", new { @class = "footer-link" })
+        @Html.ActionLink("Inicio", "Index", "Home", new { @class = "footer-link" })
+        @Html.ActionLink("Inicio", "Index", "Home", new { @class = "footer-link" })
+    </div>
+</footer>
+    <script src="~/Scripts/menu.js"></script>
 </body>
 </html>
