@@ -30,7 +30,7 @@ img {
     text-align: center;
     font-size: 2.5em;
     margin: 10px 0;
-    color: #0094ff;
+    color: #454545;
     font-family:"Poppins";
 }
 
@@ -45,7 +45,7 @@ img {
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s;
-    z-index: 999;
+    z-index: 999999;
 }
 
 .menu{
@@ -55,27 +55,32 @@ img {
     background:#212121;
     width:100%;
     list-style:none;
-    padding:20px;
+    padding:0px;
     margin:0;
 }
 
 .menu-item{
-    padding:20px;
     text-align:center;
-    width:150px;
     margin:auto;
 }
 
-.menu-item{
+.menu-link{
+    padding:20px;
     color:white;
     text-decoration:none;
     position:relative;
     display:block
 }
 
+.menu-link:hover{
+    background:white;
+    color:#212121; 
+}
+
 .mostrar{
     opacity: 1;
     visibility:visible;
+    display:block;
 }
 
 .icon-menu {
@@ -83,6 +88,7 @@ img {
     border: 1px solid #0094ff;
     display: block;
     padding: 10px 20px;
+    margin-left:auto; 
 }
 
 .main-header-btn {
@@ -199,6 +205,12 @@ img {
     text-decoration:none;
     width:150px;
     margin:10px auto;
+    transition:all 0.5s;
+}
+
+.btn-shop:hover{
+    background:#FF4E00;
+    color:white;
 }
 
 
@@ -334,6 +346,10 @@ img {
     color:#333; 
 }
 
+.btn-shop:hover{
+    color:white;
+}
+
 .main-footer{
     background: #151515;
     color:white;
@@ -378,5 +394,7 @@ img {
 
 /*estilos para la web*/
 @media screen and (min-widht:1024px) {
-
+    .icon-menu{
+        display:none;
+    }
 }

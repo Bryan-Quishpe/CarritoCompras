@@ -169,6 +169,7 @@
     <Content Include="fonts\Roboto-Regular.ttf" />
     <Content Include="fonts\Poppins-Bold.ttf" />
     <None Include="packages.config" />
+    <Content Include="Views\Home\Login.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
